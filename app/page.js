@@ -6,11 +6,11 @@ export default function Home() {
 
         <p style={styles.text}>
           El acceso no es para todos.<br />
-          Conocimiento. Estrategia. Paciencia.
+          Información asimétrica. Decisiones frías. Tiempo.
         </p>
 
         <p style={styles.text}>
-          La bóveda solo se abre para los titulares.
+          La bóveda se abre solo cuando la estrategia está madura.
         </p>
 
         <button style={styles.button}>
