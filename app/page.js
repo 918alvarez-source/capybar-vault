@@ -13,9 +13,12 @@ export default function Home() {
           La bóveda se abre solo cuando la estrategia está madura.
         </p>
 
-        <button style={styles.button}>
-          Solicitar acceso
-        </button>
+        <button
+  style={styles.button}
+  onClick={() => alert("Acceso solo por invitación.")}
+>
+  Solicitar acceso
+</button>
 
         <p style={styles.subtext}>
           Apertura limitada · Q1 2026<br />
