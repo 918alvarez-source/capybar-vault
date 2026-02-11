@@ -19,7 +19,20 @@ export default function Home() {
         <Link href="/vault" style={styles.button}>
           Solicitar acceso
         </Link>
+<div style={{ marginTop: "2.5rem", textAlign: "left" }}>
+  <h2 style={{ fontSize: "1.2rem", marginBottom: "1rem" }}>
+    ¿Qué incluye el acceso?
+  </h2>
 
+  <ul style={{ fontSize: "0.95rem", lineHeight: "1.6", opacity: 0.9 }}>
+    <li>Formación progresiva en economía y finanzas básicas</li>
+    <li>Administración personal y toma de decisiones</li>
+    <li>Desarrollo personal y mentalidad a largo plazo</li>
+    <li>Biblioteca curada de recursos y materiales</li>
+    <li>Acceso privado verificado por NFT</li>
+    <li>Entorno sin ruido ni promesas irreales</li>
+  </ul>
+</div>
         <Link href="/manifesto" style={styles.link}>
           Leer el manifiesto
         </Link>
