@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main style={styles.main}>
       <div style={styles.card}>
-        <h1 style={styles.title}>🐹 Bóveda del Carpincho</h1>
+        <h1 style={styles.title}>🐹 Capybara Vault</h1>
 
         <p style={styles.text}>
           El acceso no es para todos.<br />
@@ -10,19 +12,21 @@ export default function Home() {
         </p>
 
         <p style={styles.text}>
-          La bóveda se abre solo cuando la estrategia está madura.
+          Capybara Vault es un entorno privado enfocado en economía,
+          administración personal, libertad financiera y superación personal.
         </p>
 
-        <button
-  style={styles.button}
-  onClick={() => alert("Acceso solo por invitación.")}
->
-  Solicitar acceso
-</button>
+        <Link href="/vault" style={styles.button}>
+          Solicitar acceso
+        </Link>
+
+        <Link href="/manifesto" style={styles.link}>
+          Leer el manifiesto
+        </Link>
 
         <p style={styles.subtext}>
-          Apertura limitada · Q1 2026<br />
-          Built on-chain · Strategy first · No hype
+          Fase Génesis · Acceso limitado<br />
+          Construido on-chain · Estrategia primero · Sin hype
         </p>
       </div>
     </main>
@@ -61,6 +65,16 @@ const styles = {
     color: "#fff",
     border: "1px solid #fff",
     cursor: "pointer",
+    textDecoration: "none",
+    display: "inline-block",
+  },
+  link: {
+    display: "block",
+    marginTop: "1.2rem",
+    fontSize: "0.9rem",
+    opacity: 0.8,
+    textDecoration: "underline",
+    color: "#fff",
   },
   subtext: {
     marginTop: "2rem",
